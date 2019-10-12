@@ -177,7 +177,7 @@ function myFunction()
     var x = document.getElementById("name"),
      txt = x.innerHTML;
     var colors = new Array(15);
-    colors.fill("bbbbbb", 0, 15);
+    colors.fill("c0c0c0", 0, 15);
     (myFunction = function() {
         var newText = "";
 	var savedColor = colors[0];
@@ -192,7 +192,7 @@ function myFunction()
 	    savedColor = temp;
         }
         x.innerHTML = newText;
-	setTimeout(myFunction, 1000);
+	setTimeout(myFunction, 800);
     })();
 }
 myFunction();
