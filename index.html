@@ -18,13 +18,25 @@
 				margin: 0px;
 			}
 
-			img {
+
+			li  {
+ 			 	display: inline;
+ 			 	font-size: 200%;
+				padding: 1% 3%;
+			}
+			li:hover {
+				background-color: green;
+				border: 1px solid white;
+				padding: 1.2% 3.3%;
+			}
+
+			video, img {
 				width: 40%;
 				height: 45%;
 				margin: 2%;
 				border: 2px solid black;
 			}
-			img:hover {
+			video:hover, img:hover {
 				width: 41%;
 				height: 46%;
 				margin-right: 0%;
@@ -95,20 +107,10 @@
 				height: 5%;
 			}
 
-			li  {
- 			 	display: inline;
- 			 	font-size: 200%;
-				padding: 1% 3%;
-			}
-			li:hover {
-				background-color: green;
-				border: 1px solid white;
-				padding: 1.2% 3.3%;
-			}
-
 			h1{
 				margin:2%;
 				font-size: 50px;
+				display:inline;
 			}
 
 			#kthlink:hover{
@@ -126,8 +128,10 @@
 				color:black;
 				text-decoration: none;
 			}
+
 		</style>
 	</head>
+
 	<body>
 		<ul>
 			<a href="#"><li>Home</li></a>
@@ -139,28 +143,76 @@
 			<a href="https://github.com/Robert-Mellberg/Julia" target="_blank"><li>Julia</li></a>
 		</ul>
 		<br><br><br><br>
-		<h1>Robert Mellberg</h1>
+		
+		<h1 id="name">Robert Mellberg</h1>
 		<p style="margin:2%; font-size:20px;">I am currently studying the second year at <a id="kthlink" href="https://www.kth.se/en" target="_blank">KTH royal institute of technology</a> on the computer science program <br><br> On my free time i mostly develop
 		applications for games and competetive programming. If you want to read more about any of the projects, hover your mouse over or click on a project below. </p>
 
 		<div class="container">
-		<a id = "spel1" href="https://github.com/Robert-Mellberg/Dinosaur-Game-Rip-Off" target="_blank"><img src="GIF/DinoGif.gif" alt="Gameplay of the dinosaur game"/></a>
-		<a id = "spel2" href="https://github.com/Robert-Mellberg/Retris" target="_blank"><img src="GIF/RetrisGIF.gif" alt="Gameplay of Retris"/></a>
+		<a id = "spel1" href="https://github.com/Robert-Mellberg/Dinosaur-Game-Rip-Off" target="_blank"><video autoplay muted loop><source src="Media/DinoMP.mp4" type="video/mp4"></video></a>
+		<a id = "spel2" href="https://github.com/Robert-Mellberg/Retris" target="_blank"><video autoplay muted loop><source src="Media/RetrisMP.mp4" type="video/mp4"></video></a>
 		<p id= "text1" class = "descriptionLeft">The game is a windows game loosely inspired by the popular google chrome dinosaur game that appears when you are unable to connect to a website.
 		<br><br>The game is very simple, all you have to do is jump over or duck under objects. You can jump and duck with either the up-arrow or the down-arrow respectively or use the voice recognition and just say "jump" or "duck". Furthermore, if you do not like the color of your character, just yell out another color to change it's appearance.</p>
 		<p id= "text2" class = "descriptionRight">Have you grown tired of playing tetris with all the predictable game pieces? Then try playing Tetris with random pieces, or Retris.
 		<br><br>Every game piece consists of between 1-9 squares in a maximum of 3x3 formation. The pieces should then be dropped on the board so that a horisontal line gets filled with squares. If a line is filled with squares, then those squares will be removed and you will gain 1 point. Try if you can get more points than in the clip above.</p>
-		<a id = "spel3" href="https://github.com/Robert-Mellberg/Four-in-a-row-AI" target="_blank"><img src="GIF/FourInARowGIF.gif" alt="Gameplay of four in a row"/></a>
-		<a id = "spel4" href="https://github.com/Robert-Mellberg/Chess-AI" target="_blank"><img src="GIF/ChessGIF.gif" alt="Gameplay of chess"/></a>
+		<a id = "spel3" href="https://github.com/Robert-Mellberg/Four-in-a-row-AI" target="_blank"><video autoplay muted loop><source src="Media/ConnectMP.mp4" type="video/mp4"></video></a>
+		<a id = "spel4" href="https://github.com/Robert-Mellberg/Chess-AI" target="_blank"><video autoplay muted loop><source src="Media/ChessMP.mp4" type="video/mp4"></video></a>
 		<p id= "text3" class = "descriptionLeft">This game is a version of the popular game Connect Four (or Four in a Row). The game consists of a 6 bricks high and 8 bricks wide board. The two players take turns putting a brick (green brick for player 1 and red brick for player 2) in the lowest available spot in any column. The game ends when a player has four consecutive bricks in a horisontal, vertical or diagonal row.
 		<br><br>In this game you will play against the computer in a difficulty of your choosing. Will you take on the challenge to win against the computer on Hard?</p>
 		<p id= "text4" class = "descriptionRight">This game is a version of the game chess but with a small twist, all the pieces are based on swedish people. The origin of chess isn't completely known but it has existed for approximately 2000 years. It is played with two players, one on each side of a 8x8 board. Each player starts with a total of 16 pieces where each piece have a different set of legal moves. If a player's piece lands on the opponent's piece, then the latter is removed from the board. The game ends when one person get's checkmate, meaning that the opponent's king is threatened and the opponent can't remove the threat.
 		<br><br>In this game you will play against the computer in a difficulty of your choosing. Let the best king win!</p>
-		<a id = "spel5" href="https://github.com/Robert-Mellberg/Kattis-solutions" target="_blank"><img src="GIF/KattisGIF.gif" alt="Solving a problem from Kattis"/></a>
-		<a id = "spel6" href="https://github.com/Robert-Mellberg/Julia" target="_blank"><img src="Pictures/Julia.png" alt="Image created by the Julia application"/></a>
+		<a id = "spel5" href="https://github.com/Robert-Mellberg/Kattis-solutions" target="_blank"><video autoplay muted loop><source src="Media/KattisMP.mp4" type="video/mp4"></video></a>
+		<a id = "spel6" href="https://github.com/Robert-Mellberg/Julia" target="_blank"><img src="Media/Julia.png" alt="Image created by the Julia application"/></a>
 		<p id= "text5" class = "descriptionLeft">Click on the GIF to see any of the 248 solutions to Kattis. The problems ranges anywhere from Hello World to finding the inverse factorial.</p>
 		<p id= "text6" class = "descriptionRight">Julia is an application used to draw cool pictures based on the work of the mathematician Gaston Julia. All you have to do is choose a color, a complex number and a color intensity and click on the draw button to get your cool picture. If you don't have any imagination and can't come up with numbers, just press the randomize button to get a random picture.</p>
 		<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 		</div><!-- /.container -->
+
+
+
+
+<script>
+function myFunction()
+{
+    var x = document.getElementById("name"),
+     txt = x.innerHTML;
+    var colors = new Array(15);
+    colors.fill("bbbbbb", 0, 15);
+    (myFunction = function() {
+        var newText = "";
+	var savedColor = colors[0];
+	colors[0] = getColor();
+	newText += '<span style="color:#'+colors[0]+'">'+'➜'+'</span>';
+	newText += '<span style="color:#'+colors[0]+'">'+txt.charAt(i)+'</span>';
+        for(var i=1, l=txt.length; i<l; i++)
+        {
+	    var temp = colors[i];
+	    colors[i] = savedColor;
+	    newText += '<span style="color:#'+colors[i]+'">'+txt.charAt(i)+'</span>';
+	    savedColor = temp;
+        }
+        x.innerHTML = newText;
+	setTimeout(myFunction, 1000);
+    })();
+}
+myFunction();
+function getColor()
+{
+    var colorString="";
+    for(var i=0;i<6;i++)
+    {
+        var num = Math.floor(Math.random()*7+4);
+        hexNum = num.toString(16);
+        colorString += hexNum;
+    }
+    return colorString;
+}
+
+</script> 
+
+
+
+
+
 	</body>
 </html>
